@@ -1,0 +1,25 @@
+{
+  "name": "node-server-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './src/api.test.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
+    "dev": "nodemon ./src/index.js",
+"start": "node ./src/index.js" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "4.17.1",
+    "mochawesome": "6.1.1",
+    "mongoose": "^5.10.15",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1"
+  }
+}
